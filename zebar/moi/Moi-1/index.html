@@ -259,7 +259,16 @@
             },
             (_output$date = output.date) === null || _output$date === void 0
               ? void 0
-              : _output$date.formatted
+              : _output$date.formatted +
+                  " IST | " +
+                  new Intl.DateTimeFormat("en-AU", {
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    second: "2-digit",
+                    hour12: false,
+                    timeZone: "Australia/Sydney", // AEDT/AEST auto
+                  }).format(new Date()) +
+                  " AEDT"
           ),
           /*#__PURE__*/ React.createElement(
             "div",
@@ -423,6 +432,16 @@
         weather: { type: "weather" },
       });
 
+      function formatAEDT(date) {
+        return new Intl.DateTimeFormat("en-AU", {
+          hour: "2-digit",
+          minute: "2-digit",
+          second: "2-digit",
+          hour12: false,
+          timeZone: "Australia/Sydney", // auto AEDT/AEST
+        }).format(date);
+      }
+
       createRoot(document.getElementById("root")).render(<App />);
 
       function App() {
@@ -524,7 +543,14 @@
               )}
             </div>
 
-            <div className="center">{output.date?.formatted}</div>
+            <div className="center">
+              {output.date?.formatted && (
+                <>
+                  {output.date.formatted} IST&nbsp;|&nbsp;
+                  {formatAEDT(new Date())} AEDT
+                </>
+              )}
+            </div>
 
             <div className="right">
               {output.glazewm && (
