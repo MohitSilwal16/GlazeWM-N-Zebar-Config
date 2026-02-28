@@ -5,6 +5,11 @@
       "pack": "glzr-io.starter",
       "widget": "with-glazewm",
       "preset": "default"
+    },
+    {
+      "pack": "moi",
+      "widget": "moi-1",
+      "preset": "default"
     }
   ]
 }
