@@ -2,8 +2,9 @@
  * Import the Nerdfonts icon font.
  * Ref https://www.nerdfonts.com/cheat-sheet for a cheatsheet of available Nerdfonts icons.
  */
-@import 'https://www.nerdfonts.com/assets/css/webfont.css';
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
 
+/*
 :root {
   --text-size: 12px;
   --icon-size: 12px;
@@ -16,12 +17,29 @@
 
   --background-color-light: rgba(238 238 238 / 90%);
   --background-color-dark: #000;
-  /*
   --background-color-dark: linear-gradient(
     rgb(0 0 0 / 90%),
     rgb(5 2 20 / 85%)
   );
-  */
+}
+*/
+
+/* Tokyo Night Theme */
+:root {
+  /* Text */
+  --text-size: 12px;
+  --icon-size: 12px;
+
+  --text-color-light: rgba(25 25 35 / 95%);
+  --text-color-dark: rgba(220 225 255 / 95%);
+
+  /* Icons */
+  --icon-color-light: rgb(120 140 200); /* soft steel-blue */
+  --icon-color-dark: rgba(140 160 255 / 90%); /* glowing moon-blue */
+
+  /* Backgrounds */
+  --background-color-light: rgba(235 238 255 / 90%); /* pale dusk tone */
+  --background-color-dark: rgba(10 8 30 / 88%); /* deep night sky */
 }
 
 @media (prefers-color-scheme: light) {
