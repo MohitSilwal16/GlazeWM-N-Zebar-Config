@@ -30,15 +30,18 @@
   --text-size: 12px;
   --icon-size: 12px;
 
-  --text-color-light: rgba(25 25 35 / 95%);
+  /* --text-color-light: rgba(25 25 35 95%);*/
+  --text-color-light: rgba(220 225 255 / 95%);
   --text-color-dark: rgba(220 225 255 / 95%);
 
   /* Icons */
-  --icon-color-light: rgb(120 140 200); /* soft steel-blue */
+  /* --icon-color-light: rgb(120 140 200); soft steel-blue */
+  --icon-color-light: rgba(140 160 255 / 90%); /* glowing moon-blue */
   --icon-color-dark: rgba(140 160 255 / 90%); /* glowing moon-blue */
 
   /* Backgrounds */
-  --background-color-light: rgba(235 238 255 / 90%); /* pale dusk tone */
+  /*--background-color-light: rgba(235 238 255 / 90%);  pale dusk tone */
+  --background-color-light: rgba(10 8 30 / 88%); /* deep night sky */
   --background-color-dark: rgba(10 8 30 / 88%); /* deep night sky */
 }
 
